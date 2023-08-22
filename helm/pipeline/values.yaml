@@ -1,0 +1,20 @@
+app:
+  name: orderss58-app
+  namespace: devhub
+  cluster: .apps.cluster-mwqln.mwqln.sandbox2329.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/devhub-mad/orderss58-app-backend
+  org: devhub-mad
+  name: orderss58-app-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: orderss58-app-backend
+  tag: latest
+
+
+pipelineStorage:
+  pvcSize: 2Gi
+  storageClassName: ""
